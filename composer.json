@@ -1,0 +1,13 @@
+{
+    "name": "boris/nouveau_poo",
+    "autoload": {
+        "psr-4": {
+            
+            "Boris\\NouveauPoo\\": "src/",
+            "Router\\": "routes/",
+            "App\\": "app/",
+            "Database\\": "database/"
+        }
+    },
+    "require": {}
+}
