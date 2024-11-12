@@ -21,5 +21,12 @@ class Post extends Model {
         HTML;
 
     }
+    public function getTags(){
+        
+
+            return $this->query("SELECT t.* FROM tags t inner join post_tag pt on pt.tag_id = t.id inner join posts p on pt.post_id = p.id where p.id=?",$this->id);
     
-}
+    }
+
+    }
+    
